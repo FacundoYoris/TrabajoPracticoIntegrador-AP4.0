@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <section id="formulario-contacto">
+        <form action="#" name="Nombre">
+        <!-- Pagina N°1-->
+            <div class="p">Información personal</div>
+            <div class="campo">
+                <div class="label">
+                    <input type="text"  id="nombre" placeholder="Nombre">
+                </div>
+            </div>
+            <div class="campo">
+                <div class="label">
+                    <input type="text"  id="apellido" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="campo-botones">
+                <button>Siguiente</button>
+            </div>
+
+
+            <!-- Pagina N°2-->
+            <div class="p">Información secundaria</div>
+            <div class="campo">
+                <div class="label">
+                    <input type="date" id="fechaNac" max="2010-12-31" value="2000-03-31">
+                </div>
+            </div>
+            <div class="campo">
+                <div class="label">
+                    <input type="text" id="sexo" placeholder="Sexo">
+                    <select name="" id="sexo">
+                    <option value="-1" disable>Elige una opción</option>
+                    <option value="0">Masculino</option>
+                    <option value="1">Femenino</option>
+                    <option value="2">No especifica</option>
+                    </select>
+                </div>
+            </div>
+            <div class="campo-botenes">
+                <button class="volver">Atrás</button>
+                <button class="seguir">Siguiente</button>
+            </div>
+
+            <!-- Pagina N°3-->
+            <div class="p">Información de contacto</div>
+            <div class="campo">
+                <div class="label">
+                    <input type="text" id="email" placeholder="Correo electrónico">
+                </div>
+            </div>
+            <div class="campo">
+                <div class="label">
+                    <input type="text" id="asunto" placeholder="Asunto">
+                </div>
+            </div>
+            <div class="campo">
+                <div class="label">
+                    <input type="text" id="mensaje" placeholder="Mensaje">
+                </div>
+            </div>
+            <div class="campo-botones">
+                <button class="volver">Atrás</button>
+                <button>Enviar</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
