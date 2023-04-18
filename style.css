@@ -1,14 +1,19 @@
-
+html{
+    background-color: black;
+}
 body{
-    margin:0;
+    margin:0 auto;
     font-family: Georgia,Times;
     color: #000000;
     font-size: 18px;
     line-height: 25px;
+    width: 88%;
 }
 main #titulo h1{
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 95%;
     line-height: 1.3em;
+    /* width:88%; */
 }
 p{
     margin-bottom: 20.5px;
@@ -20,27 +25,35 @@ footer h2 {
 main h1,h2{
     text-align: center;
 }
-/*Clases*/
-.container{
-    width: 85%;
-    max-width: 850px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .header{
     background-color: #333;
+    /* box-sizing: content-box; */
     color:white;
     position: fixed;
-    width: 100%;
+    width: 88%;
     top:0;
 }
 .header a{
     color:white;
     text-decoration: none;
 }
+.container{
+    width: 100%;
+    /* max-width: 850px; */
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    box-sizing:border-box;
+}
+
+.container img{
+    width: 10%;
+    padding: 5px;
+}
+
 .navegacion{
+    width: 90%;
     margin:0;
     padding:0;
     list-style: none;
@@ -60,27 +73,37 @@ main h1,h2{
     background: #060A5A;
     
 }
-.footer{
-    left: 0;
-    right: 0;
-    background-color: #333;
-    color:white;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content:space-around;   
-}
-
 .main{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(214, 211, 211);
     margin:0 auto;
-    width: 85%;
-    padding-top:100px;
+    margin-top:90px;
     padding-bottom:40px;
     text-align: justify;
+    padding-left: 7px;
+    padding-right: 7px;
+    box-sizing: border-box;
 }
-
-/* ID */
+#titulo{
+    min-width: 120px;
+    width: 20%;
+    height: 10%;
+    padding: 2px;
+    border-style: outset;
+    margin:0 auto;
+    background-color: #000000;
+    color: rgb(243, 139, 2);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.imagenes-servicios{
+    right: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    
+}
 #oferta{
     margin:0 auto;
     display: flex;
@@ -101,34 +124,42 @@ main h1,h2{
     color:rgb(219, 163, 7);
     font-family: Arial, Helvetica, sans-serif;
 }
-#titulo{
-
-    width: 20%;
-    height: 10%;
-    padding: 2px;
-    border-style: outset;
-    margin:0 auto;
-    background-color: #000000;
-    color: rgb(243, 139, 2);
-    border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 #formulario-contacto{
-    width: 21%;
-    height: 21%;
+    display: inline-block;
+    min-width: 260px;
+    width: 20%;
+    /* height: 30%; */
     border:2px solid black;
-    align-items: center;
     text-align: center;
     background-color: rgb(70, 54, 54);
-    color:azure
+    color:azure;
+    
+}
+.form-contacto input{
+    width: 50%;
 }
 
+.campo-botones{
+    padding-bottom: 2%;
+}
+.footer{
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color:white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content:space-around;   
+}
 @media only screen and (max-width: 912px) {
-    .navegacion{
-        width: 100%; 
-        margin-top: 15px;  
+    .container img{
+        width: auto;
     }
+    .navegacion{
+       text-align: center;
+
+    } 
     .navegacion ul li{
         display: block;
     }
@@ -141,4 +172,8 @@ main h1,h2{
     .navegacion ul li a:hover{
         background: #060A5A;
     }
+    .main {
+        margin-top: 200px;
+    }
+   
 }

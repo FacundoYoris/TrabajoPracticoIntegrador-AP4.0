@@ -1,0 +1,119 @@
+html{
+    background-color: black;
+}
+body{
+    margin:0 auto;
+    width: 88%;
+    font-family: Georgia,Times;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    background-color: rgb(163, 173, 173);
+    border: #e4e4e4 solid;
+    text-align: center;
+}
+main #titulo h1{
+    font-size: 2rem;
+    line-height: 1em;
+}
+p{
+    margin-bottom: 20.5px;
+}
+footer h2 {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: #000000 solid;
+}
+.header{
+    background-color: #333;
+    color:white;
+    position: fixed;
+    width: 88%;
+    top:0;
+}
+.header a{
+    color:white;
+    text-decoration: none;
+}
+.navegacion{
+    margin:0;
+    padding:0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.navegacion ul li{
+    display: inline-block;
+}
+.navegacion ul li a{
+    display: block;
+    padding: 10px 19px;
+    border-radius: 10px;
+    transition: all  linear;
+}
+.navegacion ul li a:hover{
+
+    background: #060A5A;
+    
+}
+.main{
+    padding-top:100px;
+    padding-bottom:40px;
+}
+.footer{
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color:white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content:space-around;   
+}
+#titulo{
+
+    width: 20%;
+    height: 10%;
+    padding: 2px;
+    border-style: outset;
+    margin:0 auto;
+    background-color: #000000;
+    color: rgb(243, 139, 2);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#formulario-contacto{
+    width: 21%;
+    height: 21%;
+    border:2px solid black;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(70, 54, 54);
+    color:azure
+}
+
+@media only screen and (max-width: 912px) {
+    .navegacion{
+        width: 100%; 
+        margin-top: 15px;  
+    }
+    .navegacion ul li{
+        display: block;
+    }
+    .navegacion ul li a{
+        display: block;
+        padding: 8px 0px;
+        border-radius: 10px;
+        transition: all  linear;
+    }
+    .navegacion ul li a:hover{
+        background: #060A5A;
+    }
+}

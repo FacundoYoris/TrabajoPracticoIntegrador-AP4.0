@@ -8,244 +8,226 @@
     <title>HOTEL HEREDERO</title>
   </head>
   <body>
+    <div>
+      <header class="header">
+        <div class="container">
+          <img src="imagenes/hotel.png" alt="" height="80px" width="80px" />
+          <nav class="navegacion">
+            <ul>
+              <li><a href="#presentacion">Sobre nosotros</a></li>
+              <li><a href="#">Quienes somos</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Reservas</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <div>
+      <main class="main">
+        <div id="titulo">
+          <h1>HOTEL<br />HEREDERO</h1>
+        </div>
 
-    <header class="header">
-      <div class="container logo-nav-container">
-        <img src="imagenes/hotel.png" alt="" height="80px" width="80px" />
-        <nav class="navegacion">
-          <ul>
-            <li><a href="#presentacion">Sobre nosotros</a></li>
-            <li><a href="#">Quienes somos</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Reservas</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+        <section id="presentacion">
+          <div>
+            <p>
+              Somos la cadena de hoteles mas reconocida del mundo. Estamos
+              orgullosos de poder decir que llevamos medio siglo acogiendo a
+              viajeros de todo el mundo. Con más de 575 hoteles en los seis
+              continentes, hotel Heredero ofrece el lugar ideal para disfrutar
+              de experiencias extraordinarias y valora a todos los huéspedes que
+              entran por sus puertas.
+            </p>
+            <p>
+              Contamos con múltiples servicios de excelente calidad, como lo
+              pueden ser:
+            </p>
+            <ul>
+              <li>Salas de spa.</li>
+              <li>Salas de juegos para niños.</li>
+              <li>Gimnasio.</li>
+              <li>Pileta.</li>
+              <li>Servicio a la habitación</li>
+            </ul>
+            <!-- <div class="imagenes-servicios">
+              <img src="imagenes/spa.png" alt="spa">
 
-    <main class="main">
-      <div id="titulo">
-        <h1>
-          HOTEL<br/>HEREDERO
-        </h1>
-      </div>
+              <img src="imagenes/servicioHabitacion.png" alt="servicioHabitacion">
 
-      <section id="presentacion">
+              <img src="imagenes/niños.png" alt="juegos">      
+
+              <img src="imagenes/pileta.png" alt="pileta">    
+                    
+              <img src="imagenes/gimnasio.png" alt="gimnasio">
+          </div> -->
+          </div>
+        </section>
+
+        <section id="oferta">
+          <div class="oferta">
+            <p>Reservando hoy</p>
+            <h2>
+              OFERTA <br />
+              30% OFF
+            </h2>
+          </div>
+        </section>
         <div>
           <p>
-            Somos la cadena de hoteles mas reconocida del mundo. Estamos
-            orgullosos de poder decir que llevamos medio siglo acogiendo a
-            viajeros de todo el mundo. Con más de 575 hoteles en los seis
-            continentes, hotel Heredero ofrece el lugar ideal para disfrutar de
-            experiencias extraordinarias y valora a todos los huéspedes que
-            entran por sus puertas.
+            ¿Te queres contactar con nosotros? Estamos a disposición para
+            resolver todas las consultas que tenga.
           </p>
-          <p>
-            Contamos con múltiples servicios de excelente calidad, como lo pueden ser: 
-          </p>
-          <ul>
-            <li>Sala de spa.</li>
-            <li>Servicio a la habitación.</li>
-            <li>Salas de juegos para niños.</li>
-            <li>Pileta.</li>
-            <li>Gimnasio.</li>
-          </ul>
         </div>
-
-      </section>
-
-      <section id="oferta">
-        <div class="oferta">
-          <p>Reservando hoy</p>
-          <h2>
-            OFERTA <br />
-            30% OFF
-          </h2>
-        </div>
-      </section>
-      
-      <p>
-        ¿Te queres contactar con nosotros? Estamos a disposición para resolver
-        todas las consultas que desee
-      </p>
-      <p>Responderemos su duda a la brevedad</p>
-
-      <section id="formulario-contacto">
-        <form action="#" name="Nombre">
-          <!-- Pagina N°1-->
-          <div class="p">Información personal</div>
-          <div class="campo">
-            <div class="label">
-              <input type="text" id="nombre" placeholder="Nombre" />
+        <section id="formulario-contacto">
+          <form class="form-contacto" action="#" name="Nombre">
+            <div class="p">Información personal</div>
+            <div class="campo">
+              <div class="label">
+                <input type="text" id="nombre" placeholder="Nombre" />
+              </div>
             </div>
-          </div>
-          <div class="campo">
-            <div class="label">
-              <input type="text" id="apellido" placeholder="Apellido" />
+            <div class="campo">
+              <div class="label">
+                <input type="text" id="apellido" placeholder="Apellido" />
+              </div>
             </div>
-          </div>
-          <div class="campo-botones">
+            <!-- <div class="campo-botones">
             <button>Siguiente</button>
-          </div>
+          </div> -->
 
-          <!-- Pagina N°2-->
-          <div class="p">Información secundaria</div>
-          <div class="campo">
-            <div class="label">
-              <input
-                type="date"
-                id="fechaNac"
-                max="2010-12-31"
-                value="2000-03-31"
-              />
+            <div class="p">Información secundaria</div>
+            <div class="campo">
+              <div class="label">
+                <input
+                  type="date"
+                  id="fechaNac"
+                  max="2010-12-31"
+                  value="2000-03-31"
+                />
+              </div>
             </div>
-          </div>
-          <div class="campo">
-            <div class="label">
-              <input type="text" id="sexo" placeholder="Sexo" />
-              <select name="" id="sexo">
-                <option value="-1" disable>Elige una opción</option>
-                <option value="0">Masculino</option>
-                <option value="1">Femenino</option>
-                <option value="2">No especifica</option>
-              </select>
+            <div class="campo">
+              <div class="label">
+                <select name="" id="sexo">
+                  <option value="-1" disable>Sexo</option>
+                  <option value="0">Masculino</option>
+                  <option value="1">Femenino</option>
+                  <option value="2">No especifica</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="campo-botenes">
+            <!-- <div class="campo-botenes">
             <button class="volver">Atrás</button>
             <button class="seguir">Siguiente</button>
-          </div>
+          </div> -->
 
-          <!-- Pagina N°3-->
-          <div class="p">Información de contacto</div>
-          <div class="campo">
-            <div class="label">
-              <input type="text" id="email" placeholder="Correo electrónico" />
+            <div class="p">Información de contacto</div>
+            <div class="campo">
+              <div class="label">
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="Correo electrónico"
+                />
+              </div>
             </div>
-          </div>
-          <div class="campo">
-            <div class="label">
-              <input type="text" id="asunto" placeholder="Asunto" />
+            <div class="campo">
+              <div class="label">
+                <input type="text" id="asunto" placeholder="Asunto" />
+              </div>
             </div>
-          </div>
-          <div class="campo">
-            <div class="label">
-              <input type="text" id="mensaje" placeholder="Mensaje" />
+            <div class="campo">
+              <div class="label">
+                <input type="text" id="mensaje" placeholder="Mensaje" />
+              </div>
             </div>
-          </div>
-          <div class="campo-botones">
-            <button class="volver">Atrás</button>
-            <button>Enviar</button>
-          </div>
-        </form>
-      </section>
+            <div class="campo-botones">
+              <!-- <button class="volver">Atrás</button> -->
+              <button>Enviar</button>
+            </div>
+          </form>
+        </section>
+        <p>Responderemos su consulta a la brevedad.</p>
+        <p>
+          1Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
+          fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
+          distinctio libero vero perspiciatis, cum aliquid quisquam tempore
+          exercitationem harum tenetur quas et incidunt illo molestiae. In
+          possimus itaque harum non aut, culpa voluptates vitae velit nisi omnis
+          odit alias mollitia fugiat repellat reprehenderit ut, incidunt dolorem
+          perferendis dolorum quaerat doloremque excepturi? Maiores dignissimos
+          doloribus in eveniet placeat repudiandae doloremque, magnam
+          perferendis! Illum ad eveniet error distinctio sequi neque rem.
+          Corrupti, in qui dolore numquam architecto nihil quam, odio ea
+          reiciendis fugit error est consectetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
+          fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
+          distinctio libero vero perspiciatis, cum aliquid quisquam tempore
+          exercitationem harum tenetur quas et incidunt illo molestiae. In
+          possimus itaque harum non aut, culpa voluptates vitae velit nisi omnis
+          odit alias mollitia fugiat repellat reprehenderit ut, incidunt dolorem
+          perferendis dolorum quaerat doloremque excepturi? Maiores dignissimos
+          doloribus in eveniet placeat repudiandae doloremque, magnam
+          perferendis! Illum ad eveniet error distinctio sequi neque rem.
+          Corrupti, in qui dolore numquam architecto nihil quam, odio ea
+          reiciendis fugit error est consectetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
+          fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
+          distinctio libero vero perspiciatis, cum aliquid quisquam tempore
+          exercitationem harum tenetur quas et incidunt illo molestiae. In
+          possimus itaque harum non aut, culpa voluptates vitae velit nisi omnis
+          odit alias mollitia fugiat repellat reprehenderit ut, incidunt dolorem
+          perferendis dolorum quaerat doloremque excepturi? Maiores dignissimos
+          doloribus in eveniet placeat repudiandae doloremque, magnam
+          perferendis! Illum ad eveniet error distinctio sequi neque rem.
+          Corrupti, in qui dolore numquam architecto nihil quam, odio ea
+          reiciendis fugit error est consectetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
+          fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
+          distinctio libero vero perspiciatis, cum aliquid quisquam tempore
+          exercitationem harum tenetur quas et incidunt illo molestiae. In
+          possimus itaque harum non aut, culpa voluptates vitae velit nisi omnis
+          odit alias mollitia fugiat repellat reprehenderit ut, incidunt dolorem
+          perferendis dolorum quaerat doloremque excepturi? Maiores dignissimos
+          doloribus in eveniet placeat repudiandae doloremque, magnam
+          perferendis! Illum ad eveniet error distinctio sequi neque rem.
+          Corrupti, in qui dolore numquam architecto nihil quam, odio ea
+          reiciendis fugit error est consectetur.
+        </p>
+      </main>
+    </div>
+    <div>
+      <footer class="footer">
+        <div>
+          <img src="imagenes/instagram.png" alt="@hotelNombreDelHotel" />
+          <h2>@HotelHeredero</h2>
+        </div>
+        <div>
+          <img
+            src="imagenes/viejo-telefono-tipico.png"
+            alt="@hotelNombreDelHotel"
+          />
+          <h2>3482655054</h2>
+        </div>
+        <div>
+          <img src="imagenes/facebook.png" alt="@hotelNombreDelHotel" />
+          <h2>HotelHeredero</h2>
+        </div>
+      </footer>
 
-      <p>
-        1Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-        perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
-        fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
-        distinctio libero vero perspiciatis, cum aliquid quisquam tempore
-        exercitationem harum tenetur quas et incidunt illo molestiae. In
-        possimus itaque harum non aut, culpa voluptates vitae velit nisi omnis
-        odit alias mollitia fugiat repellat reprehenderit ut, incidunt dolorem
-        perferendis dolorum quaerat doloremque excepturi? Maiores dignissimos
-        doloribus in eveniet placeat repudiandae doloremque, magnam perferendis!
-        Illum ad eveniet error distinctio sequi neque rem. Corrupti, in qui
-        dolore numquam architecto nihil quam, odio ea reiciendis fugit error est
-        consectetur.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-        perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
-        fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
-        distinctio libero vero perspiciatis, cum aliquid quisquam tempore
-        exercitationem harum tenetur quas et incidunt illo molestiae. In
-        possimus itaque harum non aut, culpa voluptates vitae velit nisi omnis
-        odit alias mollitia fugiat repellat reprehenderit ut, incidunt dolorem
-        perferendis dolorum quaerat doloremque excepturi? Maiores dignissimos
-        doloribus in eveniet placeat repudiandae doloremque, magnam perferendis!
-        Illum ad eveniet error distinctio sequi neque rem. Corrupti, in qui
-        dolore numquam architecto nihil quam, odio ea reiciendis fugit error est
-        consectetur.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-        perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
-        fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
-        distinctio libero vero perspiciatis, cum aliquid quisquam tempore
-        exercitationem harum tenetur quas et incidunt illo molestiae. In
-        possimus itaque harum non aut, culpa voluptates vitae velit nisi omnis
-        odit alias mollitia fugiat repellat reprehenderit ut, incidunt dolorem
-        perferendis dolorum quaerat doloremque excepturi? Maiores dignissimos
-        doloribus in eveniet placeat repudiandae doloremque, magnam perferendis!
-        Illum ad eveniet error distinctio sequi neque rem. Corrupti, in qui
-        dolore numquam architecto nihil quam, odio ea reiciendis fugit error est
-        consectetur.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-        perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
-        fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
-        distinctio libero vero perspiciatis, cum aliquid quisquam tempore
-        exercitationem harum tenetur quas et incidunt illo molestiae. In
-        possimus itaque harum non aut, culpa voluptates vitae velit nisi omnis
-        odit alias mollitia fugiat repellat reprehenderit ut, incidunt dolorem
-        perferendis dolorum quaerat doloremque excepturi? Maiores dignissimos
-        doloribus in eveniet placeat repudiandae doloremque, magnam perferendis!
-        Illum ad eveniet error distinctio sequi neque rem. Corrupti, in qui
-        dolore numquam architecto nihil quam, odio ea reiciendis fugit error est
-        consectetur.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-        perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
-        fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
-        distinctio libero vero perspiciatis, cum aliquid quisquam tempore
-        exercitationem harum tenetur quas et incidunt illo molestiae. In
-        possimus itaque harum non aut, culpa voluptates vitae velit nisi omnis
-        odit alias mollitia fugiat repellat reprehenderit ut, incidunt dolorem
-        perferendis dolorum quaerat doloremque excepturi? Maiores dignissimos
-        doloribus in eveniet placeat repudiandae doloremque, magnam perferendis!
-        Illum ad eveniet error distinctio sequi neque rem. Corrupti, in qui
-        dolore numquam architecto nihil quam, odio ea reiciendis fugit error est
-        consectetur.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-        perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
-        fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
-        distinctio libero vero perspiciatis, cum aliquid quisquam tempore
-        exercitationem harum tenetur quas et incidunt illo molestiae. In
-        possimus itaque harum non aut, culpa voluptates vitae velit nisi omnis
-        odit alias mollitia fugiat repellat reprehenderit ut, incidunt dolorem
-        perferendis dolorum quaerat doloremque excepturi? Maiores dignissimos
-        doloribus in eveniet placeat repudiandae doloremque, magnam perferendis!
-        Illum ad eveniet error distinctio sequi neque rem. Corrupti, in qui
-        dolore numquam architecto nihil quam, odio ea reiciendis fugit error est
-        consectetur.
-      </p>
-    </main>
-
-    <footer class="footer">
-      <div>
-        <img src="imagenes/instagram.png" alt="@hotelNombreDelHotel" />
-        <h2>@HotelHeredero</h2>
-      </div>
-      <div>
-        <img
-          src="imagenes/viejo-telefono-tipico.png"
-          alt="@hotelNombreDelHotel"
-        />
-        <h2>3482655054</h2>
-      </div>
-      <div>
-        <img src="imagenes/facebook.png" alt="@hotelNombreDelHotel" />
-        <h2>HotelHeredero</h2>
-      </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="main.js"></script>
-  
- </body>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script src="main.js"></script>
+    </div>
+  </body>
 </html>
