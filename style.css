@@ -15,8 +15,8 @@ main #titulo h1{
     line-height: 1.3em;
     /* width:88%; */
 }
-p{
-    margin-bottom: 20.5px;
+.formulario-reserva p{
+    margin-bottom: 2px;
 }
 footer h2 {
     font-size: 10px;
@@ -78,7 +78,7 @@ main h1,h2{
     margin:0 auto;
     margin-top:90px;
     padding-bottom:40px;
-    text-align: justify;
+    text-align: center;
     padding-left: 7px;
     padding-right: 7px;
     box-sizing: border-box;
@@ -180,10 +180,7 @@ main h1,h2{
     margin-bottom: 30px; */
     text-align: center;
 }
-.formulario-reserva label{
-    padding: 1px;
-    
-}
+
 .titulo-reserva {
     background-color: rgb(0, 0, 63);
 }
@@ -194,22 +191,37 @@ main h1,h2{
 #paso1{
     margin:0 auto;
     /* font-size: 18px; */
-    width: 50%;
+    width: 40%;
     /* padding-left: 20px; */
 
    
 }
 
-#pdf{
-    margin-left: 20px;
-    padding-left: 20px;
+main #presentacion{
+    text-align: justify;
 }
+
+.final{
+    text-align: justify;
+}
+
 #paso2{
     margin:0 auto;
-    width: 50%;
+    width: 49%;
     /* font-size: 18px; */
     /* padding-left: 20px; */
    
+}
+
+
+#pdf{
+    font-size: 16px;
+
+    margin-bottom: 30px;
+
+}
+#paso2 input{
+    width: 100%;
 }
 
 #comentario{
@@ -248,8 +260,18 @@ main h1,h2{
     .navegacion ul li a:hover{
         background: #060A5A;
     }
+
     .main {
-        margin-top: 200px;
+        margin-top: 240px;
+    }
+   
+}
+@media only screen and (max-width: 600px) {
+    #formularios{
+        display: block;
+    }
+    #formulario-contacto{
+        margin-bottom:5px;
     }
    
 }

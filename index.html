@@ -18,8 +18,9 @@
             <ul>
               <li><a href="#titulo">Sobre nosotros</a></li>
               <li><a href="#servicios">Servicios</a></li>
-              <li><a href="#formularios">Contacto</a></li>
-              <li><a href="#formularios">Reservas</a></li>
+              <li><a href="#formulario-contacto">Contacto</a></li>
+              <li><a href="#formulario-reserva">Reservas</a></li>
+              <li><a href="#redes-sociales">Redes sociales</a></li>
             </ul>
           </nav>
         </div>
@@ -88,12 +89,17 @@
             <div class="p">Información personal</div>
             <div class="campo">
               <div class="label">
-                <input type="text" id="nombrex" placeholder="Nombre" />
+                <input type="text" id="nombrex" placeholder="Nombre" required />
               </div>
             </div>
             <div class="campo">
               <div class="label">
-                <input type="text" id="apellidox" placeholder="Apellido" />
+                <input type="text" id="apellidox" placeholder="Apellido" required />
+              </div>
+            </div>
+            <div class="campo">
+              <div class="label">
+                <input type="number" id="eldni" placeholder="DNI" required />
               </div>
             </div>
             <!-- <div class="campo-botones">
@@ -107,7 +113,7 @@
                   type="date"
                   id="fechaNac"
                   max="2010-12-31"
-                  value="2000-03-31"
+                  value="2000-03-31" required
                 />
               </div>
             </div>
@@ -132,31 +138,31 @@
                 <input
                   type="text"
                   id="emailx"
-                  placeholder="Correo electrónico"
+                  placeholder="Correo electrónico" required
                 />
               </div>
             </div>
             <div class="campo">
               <div class="label">
-                <input type="text" id="asunto" placeholder="Asunto" />
+                <input type="text" id="asunto" placeholder="Asunto" required />
               </div>
             </div>
             <div class="campo">
               <div class="label">
-                <input type="text" id="mensaje" placeholder="Mensaje" />
+                <input type="text" id="mensaje" placeholder="Mensaje" required />
               </div>
             </div>
             <div class="campo-botones">
               <!-- <button class="volver">Atrás</button> -->
-              <button>Enviar</button>
+              <button id="enviar">Enviar</button>
             </div>
           </form>
           <p>Responderemos su consulta a la brevedad.</p>
         </section>
 
-        <section class="formulario-reserva">
+        <section id="formulario-reserva" class="formulario-reserva">
           <p class="titulo-reserva">Realiza tu reserva</p>
-        <p>Selección de fechas</p>
+        <p id="sdf">Selección de fechas</p>
         <form id="paso1" action="#" method="post">
             <label for="fechaLlegada">Fecha de llegada:</label>
             <input type="date" id="fechaLlegada" name="fechaLlegada" required>
@@ -164,7 +170,7 @@
             <label for="fechaSalida">Fecha de salida:</label>
             <input type="date" id="fechaSalida" name="fechaSalida" required>
     
-            <label for="tipoHabitacion">Tipo de habitación:</label>
+            <label for="tipoHabitacion" id="idxd">Tipo de habitación:</label>
             <select id="tipoHabitacion" name="tipoHabitacion" required>
                 <option value="">Seleccionar</option>
                 <option value="individual">Individual</option>
@@ -177,7 +183,7 @@
             <button type="button" onclick="validarPaso1()">Siguiente</button>
         </form>
 
-        <p>Datos del huésped</p>
+        <p id="ddh">Datos del huésped</p>
 
         <form id="paso2" action="#" method="post">
             <label for="nombre"></label>
@@ -211,21 +217,7 @@
 
         </section>
         </section>
-        <p>
-          1Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
-          fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
-          distinctio libero vero perspiciatis, cum aliquid quisquam tempore
-          exercitationem harum tenetur quas et incidunt illo molestiae. In
-          possimus itaque harum non aut, culpa voluptates vitae velit nisi omnis
-          odit alias mollitia fugiat repellat reprehenderit ut, incidunt dolorem
-          perferendis dolorum quaerat doloremque excepturi? Maiores dignissimos
-          doloribus in eveniet placeat repudiandae doloremque, magnam
-          perferendis! Illum ad eveniet error distinctio sequi neque rem.
-          Corrupti, in qui dolore numquam architecto nihil quam, odio ea
-          reiciendis fugit error est consectetur.
-        </p>
-        <p>
+        <p class="final">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
           perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
           fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
@@ -239,7 +231,7 @@
           Corrupti, in qui dolore numquam architecto nihil quam, odio ea
           reiciendis fugit error est consectetur.
         </p>
-        <p>
+        <p class="final">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
           perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
           fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
@@ -253,7 +245,21 @@
           Corrupti, in qui dolore numquam architecto nihil quam, odio ea
           reiciendis fugit error est consectetur.
         </p>
-        <p>
+        <p class="final">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
+          fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
+          distinctio libero vero perspiciatis, cum aliquid quisquam tempore
+          exercitationem harum tenetur quas et incidunt illo molestiae. In
+          possimus itaque harum non aut, culpa voluptates vitae velit nisi omnis
+          odit alias mollitia fugiat repellat reprehenderit ut, incidunt dolorem
+          perferendis dolorum quaerat doloremque excepturi? Maiores dignissimos
+          doloribus in eveniet placeat repudiandae doloremque, magnam
+          perferendis! Illum ad eveniet error distinctio sequi neque rem.
+          Corrupti, in qui dolore numquam architecto nihil quam, odio ea
+          reiciendis fugit error est consectetur.
+        </p>
+        <p class="final">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
           perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
           fuga, tenetur obcaecati quisquam! Reprehenderit nam nisi inventore
@@ -270,7 +276,7 @@
       </main>
     </div>
     <div>
-      <footer class="footer">
+      <footer id="redes-sociales" class="footer">
         <div>
           <img src="imagenes/instagram.png" alt="@hotelNombreDelHotel" />
           <h2>@HotelHeredero</h2>
@@ -288,8 +294,47 @@
         </div>
       </footer>
 
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
     </div>
     <script src="main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#enviar").click(function () {
+          var nombre = $("#nombreX").val();
+          var apellido = $("#apellidoX").val();
+          var fechaNac = $("#fechaNac").val();
+          var sexo = $("#sexo").val();
+          var email = $("#emailX").val();
+          var asunto = $("#asunto").val();
+          var mensaje = $("#mensaje").val();
+          var dni = $("#eldni").val();
+
+          $.ajax({
+           url: "https://reqbin.com/echo/post/json",
+            type: "POST",
+            data: {
+              name: nombre,
+              surname: apellido,
+              birthdate: fechaNac,
+              gender: sexo,
+              email: email,
+              subject: asunto,
+              message: mensaje,
+              personid: dni
+            },
+            success: function(result) {
+              alert("Datos guardados con éxito");
+              console.log(result);
+            },
+            error: function(xhr, status, error) {
+              alert("Error al guardar los datos");
+              console.log(xhr);
+              console.log(status);
+              console.log(error);
+            },
+          });
+        });
+      });
+    </script>
   </body>
 </html>
