@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jsPDF-1.3.2/jsPDF-1.3.2/dist/jspdf.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>HOTEL HEREDERO</title>
   </head>
@@ -14,10 +16,10 @@
           <img src="imagenes/hotel.png" alt="" height="80px" width="80px" />
           <nav class="navegacion">
             <ul>
-              <li><a href="#presentacion">Sobre nosotros</a></li>
-              <li><a href="#">Quienes somos</a></li>
-              <li><a href="#">Contacto</a></li>
-              <li><a href="#">Reservas</a></li>
+              <li><a href="#titulo">Sobre nosotros</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#formularios">Contacto</a></li>
+              <li><a href="#formularios">Reservas</a></li>
             </ul>
           </nav>
         </div>
@@ -39,7 +41,7 @@
               de experiencias extraordinarias y valora a todos los huéspedes que
               entran por sus puertas.
             </p>
-            <p>
+            <p id="servicios">
               Contamos con múltiples servicios de excelente calidad, como lo
               pueden ser:
             </p>
@@ -79,17 +81,19 @@
             resolver todas las consultas que tenga.
           </p>
         </div>
+        <section id="formularios">
         <section id="formulario-contacto">
           <form class="form-contacto" action="#" name="Nombre">
+            <p class="titulo-reserva">Contactanos</p>
             <div class="p">Información personal</div>
             <div class="campo">
               <div class="label">
-                <input type="text" id="nombre" placeholder="Nombre" />
+                <input type="text" id="nombrex" placeholder="Nombre" />
               </div>
             </div>
             <div class="campo">
               <div class="label">
-                <input type="text" id="apellido" placeholder="Apellido" />
+                <input type="text" id="apellidox" placeholder="Apellido" />
               </div>
             </div>
             <!-- <div class="campo-botones">
@@ -127,7 +131,7 @@
               <div class="label">
                 <input
                   type="text"
-                  id="email"
+                  id="emailx"
                   placeholder="Correo electrónico"
                 />
               </div>
@@ -147,8 +151,66 @@
               <button>Enviar</button>
             </div>
           </form>
+          <p>Responderemos su consulta a la brevedad.</p>
         </section>
-        <p>Responderemos su consulta a la brevedad.</p>
+
+        <section class="formulario-reserva">
+          <p class="titulo-reserva">Realiza tu reserva</p>
+        <p>Selección de fechas</p>
+        <form id="paso1" action="#" method="post">
+            <label for="fechaLlegada">Fecha de llegada:</label>
+            <input type="date" id="fechaLlegada" name="fechaLlegada" required>
+    
+            <label for="fechaSalida">Fecha de salida:</label>
+            <input type="date" id="fechaSalida" name="fechaSalida" required>
+    
+            <label for="tipoHabitacion">Tipo de habitación:</label>
+            <select id="tipoHabitacion" name="tipoHabitacion" required>
+                <option value="">Seleccionar</option>
+                <option value="individual">Individual</option>
+                <option value="doble">Doble</option>
+                <option value="triple">Triple</option>
+            </select>
+    
+           
+    
+            <button type="button" onclick="validarPaso1()">Siguiente</button>
+        </form>
+
+        <p>Datos del huésped</p>
+
+        <form id="paso2" action="#" method="post">
+            <label for="nombre"></label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+    
+            <label for="apellido"></label>
+            <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
+    
+            <label for="email"></label>
+            <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+    
+            <label for="telefono"></label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Teléfono">
+    
+            <button type="button" onclick="validarPaso2()">Siguiente</button>
+        </form>
+        
+        <p>Resumen</p>
+        
+
+	<div id="resumen">
+		<p><strong>Fecha de llegada:</strong> <span id="resumenFechaLlegada"></span></p>
+		<p><strong>Fecha de salida:</strong> <span id="resumenFechaSalida"></span></p>
+		<p><strong>Tipo de habitación:</strong> <span id="resumenTipoHabitacion"></span></p>
+		<p><strong>Número de habitaciones:</strong> <span id="resumenNumHabitaciones"></span></p>
+		<p><strong>Nombre del huésped:</strong> <span id="resumenNombre"></span></p>
+		<p><strong>Apellido del huésped:</strong> <span id="resumenApellido"></span></p>
+		<p><strong>Correo electrónico:</strong> <span id="resumenEmail"></span></p>
+		<p><strong>Teléfono:</strong> <span id="resumenTelefono"></span></p>
+        <button id="pdf" type="button" onclick="generarPDF()">Exportar a PDF</button>
+
+        </section>
+        </section>
         <p>
           1Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
           perferendis nobis illo dolorum, molestias, voluptatem ipsa consequatur
@@ -227,7 +289,7 @@
       </footer>
 
       <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-      <script src="main.js"></script>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
