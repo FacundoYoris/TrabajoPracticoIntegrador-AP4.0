@@ -85,3 +85,31 @@ document.getElementById("resumen").style.display = "none";
       
     }
   }
+
+  //Validación formulario de contacto
+  $('#form-cont').validate({
+    rules: {
+        nombrex: 'required',
+        apellidox: 'required',
+        eldni: 'required',
+        sexo: 'required',
+        emailx:{
+          required: true,
+          emailx: true
+        },
+        asunto:'required',
+        mensaje:'required'
+    },
+    messages: {
+      nombrex: 'Por favor ingrese su nombre',
+      apellidox: 'Por favor ingrese su apellido',
+      eldni: 'Por favor ingrese su dni',
+      sexo: 'Por favor ingrese su sexo',
+      emailx:{
+        required: 'Por favor ingrese su correo electrónico',
+        emailx: 'Por favor ingrese una dirección de correo electrónico válida'
+      },
+      asunto: 'Por favor ingrese el asunto a tratar',
+      mensaje: 'Por favor ingrese el mensaje que desea comunicarnos'
+    }
+  });
